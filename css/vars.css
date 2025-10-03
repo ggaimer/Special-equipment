@@ -1,0 +1,20 @@
+:root {
+	--font-family: 'IBM Plex Sans', sans-serif;
+	--second-family: 'Montserrat', sans-serif;
+	--third-family: 'Roboto', sans-serif;
+
+    --primary: #257de3;
+	--dark-gray-secondary: #333;
+	--white: #fff;
+	--white-light: #f8f8f8;
+	--yellow: #ffd600;
+	--red: #fc482d;
+	--dark-gray: #999;
+	--medium-gray: #555;
+	--light-gray: #666;
+	--green: #69be15;
+	--promotion: rgba(248, 159, 24, 0.98);
+
+    --container-width: 1200px;
+    --container-offset: 15px;
+}
