@@ -8,7 +8,7 @@ body {
     font-family: var(--font-family);
     font-weight: 400;
 
-    background-color: var(--background-white-light);
+    background-color: var(--white-light);
 }
 
 .container {
