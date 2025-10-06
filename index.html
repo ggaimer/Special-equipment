@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +10,9 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/vars.css">
     <link rel="stylesheet" href="css/media.css">
-</head>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
 <body>
     <header class="header">
         <div class='header__panel'>
@@ -196,14 +196,14 @@
                                     </span>
                                 </div>
 
-                                <img src="images/welcome-arrow.png" alt="">
+                                <img src="images/welcome/welcome-arrow.png" alt="" loading='lazy'>
                             </div>
 
                             <div class='welcome__buttons--mobile'>
                                 <button class="welcome__button button-reset">
                                     Получить консультацию
                                 </button>
-    
+
                                 <button class="welcome__button welcome__button-test button-reset">
                                     Записаться на тест драйв
                                 </button>
@@ -214,13 +214,14 @@
                                     Протестируйте возможности техники на нашем складе 2000м²
                                 </span>
 
-                                <img src="images/welcome-arrow-mobile.png" alt="" width='37' height='34'>
+                                <img src="images/welcome/welcome-arrow-mobile.png" alt="" width='37' height='34'
+                                    loading='lazy'>
                             </div>
                         </div>
                     </div>
 
                     <div class="welcome__image">
-                        <img src="images/welcome-image.webp" alt="Картинка приветствующей секции" width='423'
+                        <img src="images/welcome/welcome-image.webp" alt="Картинка приветствующей секции" width='423'
                             height='382' loading='lazy'>
 
                         <span>С 1998 года на рынке</span>
@@ -231,70 +232,1198 @@
             <div class="welcome__logos">
                 <div class='welcome__logos-tracks'>
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-1.svg" alt="Логотип компании" width='210' height='54'
+                        <img src="images/welcome/welcome-logo-1.svg" alt="Логотип компании" width='210' height='54'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-2.svg" alt="Логотип компании" width='140' height='59'
+                        <img src="images/welcome/welcome-logo-2.svg" alt="Логотип компании" width='140' height='59'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-3.svg" alt="Логотип компании" width='192' height='51'
+                        <img src="images/welcome/welcome-logo-3.svg" alt="Логотип компании" width='192' height='51'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-4.svg" alt="Логотип компании" width='273' height='26'
+                        <img src="images/welcome/welcome-logo-4.svg" alt="Логотип компании" width='273' height='26'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welocme-logo-5.svg" alt="Логотип компании" width='214' height='45'
+                        <img src="images/welcome/welocme-logo-5.svg" alt="Логотип компании" width='214' height='45'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-6.svg" alt="Логотип компании" width='241' height='31'
+                        <img src="images/welcome/welcome-logo-6.svg" alt="Логотип компании" width='241' height='31'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-1.svg" alt="Логотип компании" width='210' height='54'
+                        <img src="images/welcome/welcome-logo-1.svg" alt="Логотип компании" width='210' height='54'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-2.svg" alt="Логотип компании" width='140' height='59'
+                        <img src="images/welcome/welcome-logo-2.svg" alt="Логотип компании" width='140' height='59'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-3.svg" alt="Логотип компании" width='192' height='51'
+                        <img src="images/welcome/welcome-logo-3.svg" alt="Логотип компании" width='192' height='51'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-4.svg" alt="Логотип компании" width='273' height='26'
+                        <img src="images/welcome/welcome-logo-4.svg" alt="Логотип компании" width='273' height='26'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welocme-logo-5.svg" alt="Логотип компании" width='214' height='45'
+                        <img src="images/welcome/welocme-logo-5.svg" alt="Логотип компании" width='214' height='45'
                             loading='lazy'>
                     </div>
 
                     <div class='welcome__logos-item'>
-                        <img src="images/welcome-logo-6.svg" alt="Логотип компании" width='241' height='31'
+                        <img src="images/welcome/welcome-logo-6.svg" alt="Логотип компании" width='241' height='31'
                             loading='lazy'>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="assortment">
+            <div class="container">
+                <div class="section-top assortment__top">
+                    <h2 class="title">
+                        Ассортимент техники для ваших задач
+                    </h2>
+
+                    <a href="#" class="link">
+                        В каталог
+
+                        <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                            loading='lazy'>
+                    </a>
+                </div>
+
+                <ul class="assortment__list list-reset">
+                    <li class="assortment__item">
+                        <div class="assortment__item-content">
+                            <h3 class="assortment__title">
+                                Складская техника
+                            </h3>
+
+                            <a href="#" class="assortment__link">Подробнее..</a>
+                        </div>
+
+                        <img src="images/assortment/assortment-1.webp" alt="Картинка каталога Складская техника"
+                            width='85' height='70' loading='lazy'>
+                    </li>
+
+                    <li class="assortment__item">
+                        <div class="assortment__item-content">
+                            <h3 class="assortment__title">
+                                Подъемная техника
+                            </h3>
+
+                            <a href="#" class="assortment__link">Подробнее..</a>
+                        </div>
+
+                        <img src="images/assortment/assortment-2.webp" alt="Картинка каталога Подъемная техника"
+                            width='85' height='70' loading='lazy'>
+                    </li>
+
+                    <li class='assortment__item'>
+                        <a href='#' class='assortment__link'>
+                            <img class='assortment__image-rounded' src="images/assortment/assortment-3.webp"
+                                alt="Картинка каталога" width='232' height='228'>
+                        </a>
+                    </li>
+
+                    <li class="assortment__item">
+                        <div class="assortment__item-content">
+                            <h3 class="assortment__title">
+                                Погрузчики
+                            </h3>
+
+                            <a href="#" class="assortment__link">Подробнее..</a>
+                        </div>
+
+                        <img src="images/assortment/assortment-4.webp" alt="Картинка каталога Погрузчики" width='81'
+                            height='65' loading='lazy'>
+                    </li>
+
+                    <li class='assortment__item'>
+                        <a href='#' class='assortment__link'>
+                            <img class='assortment__image-rounded' src="images/assortment/assortment-5.webp"
+                                alt="Картинка каталога" width='232' height='228' loading='lazy'>
+                        </a>
+                    </li>
+
+                    <li class="assortment__item">
+                        <div class="assortment__item-content">
+                            <h3 class="assortment__title">
+                                Клининговое оборудование
+                            </h3>
+
+                            <a href="#" class="assortment__link">Подробнее..</a>
+                        </div>
+
+                        <img src="images/assortment/assortment-6.webp" alt="Картинка каталога Клининговое оборудование"
+                            width='55' height='56' loading='lazy'>
+                    </li>
+
+                    <li class='assortment__item'>
+                        <a href='#' class='assortment__link'>
+                            <img class='assortment__image-rounded' src="images/assortment/assortment-7.webp"
+                                alt="Картинка каталога" width='232' height='228' loading='lazy'>
+                        </a>
+                    </li>
+
+                    <li class="assortment__item">
+                        <div class="assortment__item-content">
+                            <h3 class="assortment__title">
+                                Цепи противоскольжения
+                            </h3>
+
+                            <a href="#" class="assortment__link">Подробнее..</a>
+                        </div>
+
+                        <img src="images/assortment/assortment-8.webp" alt="Картинка каталога Цепи противоскольжения"
+                            width='44' height='56' loading='lazy'>
+                    </li>
+
+                    <li class="assortment__item">
+                        <div class="assortment__item-content">
+                            <h3 class="assortment__title">
+                                Портовая техника
+                            </h3>
+
+                            <a href="#" class="assortment__link">Подробнее..</a>
+                        </div>
+
+                        <img src="images/assortment/assortment-9.webp" alt="Картинка каталога Портовая техника"
+                            width='75' height='57' loading='lazy'>
+                    </li>
+                </ul>
+
+                <a href="#" class="link link--mobile">
+                    В каталог
+
+                    <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                        loading='lazy'>
+                </a>
+
+                <ul class="assortment__benefits-list list-reset">
+                    <li class="assortment__benefits-item">
+                        <h3 class="assortment__benefits-title">
+                            Гарантия до 3х лет
+                            на оборудование
+                        </h3>
+
+                        <p class="assortment__benefits-text">
+                            Страхуем ваши инвестиции от преждевременного износа техники
+                        </p>
+                    </li>
+
+                    <li class="assortment__benefits-item">
+                        <h3 class="assortment__benefits-title">
+                            Бесплатный выезд инженера на объект
+                        </h3>
+
+                        <p class="assortment__benefits-text">
+                            Изучим специфику вашего склада, новая техника подойдет идеально
+                        </p>
+                    </li>
+
+                    <li class="assortment__benefits-item">
+                        <h3 class="assortment__benefits-title">
+                            Оригинальные запчасти в наличии
+                        </h3>
+
+                        <p class="assortment__benefits-text">
+                            Ремонт начинаем в день обращения без ожидания поставок из-за рубежа
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="section-top assortment__top">
+                    <h2 class="title">
+                        110+ моделей техники на складе
+                    </h2>
+
+                    <a href="#" class="link">
+                        В каталог
+
+                        <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                            loading='lazy'>
+                    </a>
+                </div>
+
+                <ul class="catalog__list list-reset">
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-new'>NEW</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-sale'>SALE</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-promotion'>Акция</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-new'>NEW</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-new'>NEW</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-sale'>SALE</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-promotion'>Акция</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="catalog__item">
+                        <article class="card">
+                            <div class="card__image-wrapper">
+                                <img src="images/catalog/catalog-image.svg" alt="Картинка товара" width='37' height='33'
+                                    loading='lazy'>
+                            </div>
+
+                            <div class="card__info--mobile">
+                                <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                                <span class="card__status">В наличии</span>
+                            </div>
+
+                            <p class="card__name">СИБТАЛЬ AC 2000 КГ</p>
+
+                            <div class="card__price-wrapper">
+                                <p class="card__price">15 900₽</p>
+
+                                <del class="card__price-old">20 980₽</del>
+                            </div>
+
+                            <span class="card__status">В наличии</span>
+
+                            <a href="#" class="card__link">Подробнее</a>
+
+                            <div class="card__badge">
+                                <span class='card__badge-text card__badge-new'>NEW</span>
+
+                                <span class='card__badge-discound'>-29%</span>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+
+                <button class='catalog__button'>
+                    Показать ещё
+                </button>
+            </div>
+        </section>
+
+        <section class="help">
+            <div class="container">
+                <div class="help__wrapper">
+                    <div class="help__content">
+                        <div class='help__subtitle-wrapper'>
+                            <h3 class="help__subtitle">Помощь в подборе</h3>
+                        </div>
+
+                        <h2 class="title help__title">
+                            Подберем 3 варианта техники с расчетом экономии
+                        </h2>
+
+                        <p class="help__text">
+                            Проанализируем вашу логистику и предложим решения, которые <span>сократят операционные
+                                расходы на 15-30%.</span> Бесплатно
+                        </p>
+                    </div>
+
+                    <form action="#" class="form" method='post'>
+                        <h3 class="form__title">
+                            Оставьте свои данные, и с Вами свяжется наш специалист
+                        </h3>
+
+                        <input type="text" class='form__input' placeholder='Имя' name='username'>
+
+                        <input type="tel" class='form__input' placeholder='Номер телефона' name='usertel'>
+
+                        <input type="file" id="file-upload" class="form__file-input" hidden>
+
+                        <label for="file-upload" class="form__attach">
+                            <div class='form__attach-image__wrapper'>
+                                <img src="images/help/attach.png" alt="Картинка скрепки" class="form__attach-image"
+                                    width='24' height='24' loading='lazy'>
+                            </div>
+
+                            <span class="form__attach-text">
+                                Прикрепить файл
+                            </span>
+                        </label>
+
+                        <button class="form__button button-reset" type='submit'>
+                            Получить КП за 10 минут
+                        </button>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="agree">
+
+                            <span class="checkbox__custom"></span>
+
+                            <span class="checkbox__text">
+                                Я согласен с условиями
+                            </span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="industries">
+            <div class="container">
+                <h2 class="title industries__title">
+                    Работаем с бизнесом любого масштаба: <span>от небольших складов до крупных производственных
+                        комплексов</span>
+                </h2>
+
+                <div class="industries__wrapper">
+                    <div class="industries__item">
+                        <p class="industries__text">Логистические центры</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">Производственные предприятия</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">СТО и сервисы</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">Дистрибьюторы и ТК</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">Строительные и монтажные фирмы</p>
+                    </div>
+
+                    <button class="industries__button button-reset">
+                        и другие
+                    </button>
+                </div>
+
+                <div class="industries__wrapper industries__wrapper--mobile">
+                    <div class="industries__item">
+                        <p class="industries__text">Логистические центры</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">Производственные предприятия</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">Строительные и монтажные фирмы</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">Дистрибьюторы и ТК</p>
+                    </div>
+
+                    <div class="industries__item">
+                        <p class="industries__text">СТО и сервисы</p>
+                    </div>
+
+                    <button class="industries__button button-reset">
+                        и другие
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="solutions">
+            <div class="container">
+                <h2 class="title solutions__title">
+                    Мы уже решили главные проблемы <span>с подбором техники</span>
+                </h2>
+
+                <div class="solutions__wrapper">
+                    <div class='solutions__content'>
+                        <div class="solutions__accent">
+                            <p class="solutions__text solutions__accent-text">
+                                Техника не вписывается в проезды, не достает до верхней полки, не справляется с
+                                нагрузкой
+                            </p>
+
+                            <img src="images/solutions/solutions-accent.png" alt="Картинка восклицательного знака"
+                                width='21' height='59' loading='lazy'>
+                        </div>
+
+                        <div class="solutions__check">
+                            <img src="images/solutions/solutions-check.png" alt="Картинка галочки"
+                                class='solutions__image solutions__image-check' width='58' height='58' loading='lazy'>
+
+                            <p class="solutions__text solutions__check-text">
+                                Бесплатный выезд инженера на ваш склад для замеров и тестов. Подбираем
+                                3 варианта техники, которая гарантированно подойдет
+                            </p>
+                        </div>
+                    </div>
+
+                    <img src="images/solutions/solutions-1.webp" alt="Картинка техники" class='solutions__image'
+                        width='557' height='227' loading='lazy'>
+                </div>
+
+                <div class="solutions__wrapper">
+                    <div class='solutions__content'>
+                        <div class="solutions__accent">
+                            <p class="solutions__text solutions__accent-text">
+                                Оборудование простаивает неделями в ожидании запчастей или свободных мастеров
+                            </p>
+
+                            <img src="images/solutions/solutions-accent.png" alt="Картинка восклицательного знака"
+                                width='21' height='59' loading='lazy'>
+                        </div>
+
+                        <div class="solutions__check">
+                            <img src="images/solutions/solutions-check.png" alt="Картинка галочки"
+                                class='solutions__image solutions__image-check' width='58' height='58' loading='lazy'>
+
+                            <p class="solutions__text solutions__check-text">
+                                Сервис 24/7, свой склад оригинальных запчастей и парк подменной техники. Гарантируем 0%
+                                простоя
+                            </p>
+                        </div>
+                    </div>
+
+                    <img src="images/solutions/solutions-2.webp" alt="Картинка оборудования" class='solutions__image'
+                        width='557' height='227' loading='lazy'>
+                </div>
+
+                <div class="solutions__wrapper">
+                    <div class='solutions__content'>
+                        <div class="solutions__accent">
+                            <p class="solutions__text solutions__accent-text">
+                                Стоимость новой техники «съедает» оборотные средства, а кредитная нагрузка высока
+                            </p>
+
+                            <img src="images/solutions/solutions-accent.png" alt="Картинка восклицательного знака"
+                                width='21' height='59' loading='lazy'>
+                        </div>
+
+                        <div class="solutions__check">
+                            <img src="images/solutions/solutions-check.png" alt="Картинка галочки"
+                                class='solutions__image solutions__image-check' width='58' height='58' loading='lazy'>
+
+                            <p class="solutions__text solutions__check-text">
+                                Гибкие финансовые условия: аренда
+                                от 1 дня, рассрочка 0%, лизинг и выгодный trade-in вашей старой техники
+                            </p>
+                        </div>
+                    </div>
+
+                    <img src="images/solutions/solutions-3.webp" alt="Картинка стоимости оборудования"
+                        class='solutions__image' width='557' height='227' loading='lazy'>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <div class="container">
+                <h2 class="title experience__title">
+                    26 лет решаем самые сложные задачи <span>складской логистики</span>
+                </h2>
+
+                <ul class="experience__list list">
+                    <li class="list__item experience__list-item">
+                        Основаны в <span>1998 году</span> — работаем в эпоху изменения стандартов
+                    </li>
+
+                    <li class="list__item experience__list-item">
+                        Собственный склад техники <span>площадью 2000 м²</span> в Новосибирске
+                    </li>
+
+                    <li class="list__item experience__list-item">
+                        Команда из <span>50+ специалистов</span>
+                    </li>
+
+                    <li class="list__item experience__list-item">
+                        <span>500+ успешных проектов</span> по оснащению складов
+                    </li>
+                </ul>
+
+                <div class="experience__wrapper">
+                    <div class="experience__item">
+                        <img src="images/experience/experience-1.webp" alt="Картинка консультации с главным менеджером"
+                            class="experience__image" width='416' height='149' loading='lazy'>
+
+                        <h3 class="experience__item-title">
+                            Консультация главного инженера
+                        </h3>
+
+                        <p class="experience__item-text">
+                            Крупные и нестандартные проекты ведет лично главный инженер компании с 15-летним опытом.
+                            Гарантируем технически безупречное решение сложных задач
+                        </p>
+                    </div>
+
+                    <div class="experience__item">
+                        <div class='experience__content'>
+                            <h3 class="experience__item-title">
+                                Финансовая гарантия сделки
+                            </h3>
+
+                            <p class="experience__item-text">
+                                Мы предлагаем удобные формы расчёта: от стандартной оплаты по счёту до гибких финансовых
+                                инструментов, включая лизинг. Выбирайте тот способ, который оптимален для вашего бизнеса
+                            </p>
+                        </div>
+
+                        <img src="images/experience/experience-2.webp" alt="Картинка консультации сделки"
+                            class="experience__image" width='179' height='175' loading='lazy'>
+                    </div>
+
+                    <div class="experience__item">
+                        <img src="images/experience/experience-3.webp" alt="Картинка системы" width='179'
+                            class="experience__image" height='175' loading='lazy'>
+
+                        <div class='experience__content'>
+                            <h3 class="experience__item-title">
+                                Система мониторинга эффективности
+                            </h3>
+
+                            <p class="experience__item-text">
+                                Техника оснащена встроенной диагностикой — ошибки считываются автоматически, что
+                                ускоряет ремонт и снижает его стоимость
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer">
+            <div class="container">
+                <div class="offer__wrapper">
+                    <div class='offer__content'>
+                        <h2 class="title offer__title">
+                            Получите доступ к закрытому прайсу <span>со спецусловиями для новых клиентов</span>
+                        </h2>
+
+                        <ul class="offer__list list">
+                            <li class="list__item">
+                                До 20% выгоды на технику в наличии.
+                            </li>
+
+                            <li class="list__item">
+                                Бонусный пакет на сервис и запчасти.
+                            </li>
+
+                            <li class="list__item">
+                                Условия, которых нет в общем доступе
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form action="#" class="form" method='post'>
+                        <h3 class="form__title">
+                            Оставьте свои данные, и с Вами свяжется наш специалист
+                        </h3>
+
+                        <input type="text" class='form__input' placeholder='Имя' name='username'>
+
+                        <input type="tel" class='form__input' placeholder='Номер телефона' name='usertel'>
+
+                        <input type="file" id="file-upload" class="form__file-input" hidden>
+
+                        <label for="file-upload" class="form__attach">
+                            <div class='form__attach-image__wrapper'>
+                                <img src="images/help/attach.png" alt="Картинка скрепки" class="form__attach-image"
+                                    width='24' height='24' loading='lazy'>
+                            </div>
+
+                            <span class="form__attach-text">
+                                Прикрепить файл
+                            </span>
+                        </label>
+
+                        <button class="form__button button-reset" type='submit'>
+                            Получить КП за 10 минут
+                        </button>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="agree">
+
+                            <span class="checkbox__custom"></span>
+
+                            <span class="checkbox__text">
+                                Я согласен с условиями
+                            </span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="services">
+            <div class="container services__wrapper">
+                <h2 class="title services__title">
+                    Не просто гарантия, а полное сервисное сопровождение. <span>Подтверждено благодарностями от
+                        клиентов</span>
+                </h2>
+
+                <ul class="services__list list-reset">
+                    <li class="services__item">
+                        <h3 class="services__item-title">
+                            Самая длительная гарантия в СФО
+                        </h3>
+
+                        <p class="services__item-text">
+                            До 3 лет на всю технику — официально, в договоре.
+                        </p>
+                    </li>
+
+                    <li class="services__item">
+                        <h3 class="services__item-title">
+                            Собственный сервисный центр с выездными бригадами
+                        </h3>
+
+                        <p class="services__item-text">
+                            15 сервисных автомобилей и 25 инженеров в постоянной готовности.
+                        </p>
+                    </li>
+
+                    <li class="services__item">
+                        <h3 class="services__item-title">
+                            Склад оригинальных запчастей 500+ наименований
+                        </h3>
+
+                        <p class="services__item-text">
+                            Не ждем поставок из-за границы — ремонтируем сразу.
+                        </p>
+                    </li>
+
+                    <li class="services__item">
+                        <h3 class="services__item-title">
+                            Программа «Антипростой»
+                        </h3>
+
+                        <p class="services__item-text">
+                            Бесплатная подменная техника + приоритетный ремонт для участников программы
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="services__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/services/services-1.webp" alt="Картинка первого сертификата" width='288'
+                            height='383' loading='lazy'>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/services/services-2.webp" alt="Картинка второго сертификата" width='288'
+                            height='383' loading='lazy'>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/services/services-3.webp" alt="Картинка третьего сертификата" width='288'
+                            height='383' loading='lazy'>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </section> -->
+
+        <section class="promotions">
+            <div class="container">
+                <div class="section-top promotions__top">
+                    <h2 class="title">
+                        Акции и спецпредложения
+                    </h2>
+
+                    <a href="#" class="link">
+                        В каталог
+
+                        <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                            loading='lazy'>
+                    </a>
+                </div>
+
+                <div class="promotions__buttons">
+                    <button class="promotions__button button-reset">
+                        Бесплатная диагностика техники для склада
+                    </button>
+
+                    <button class="promotions__button button-reset">
+                        Бесплатный тест-драйв техники!
+                    </button>
+
+                    <button class="promotions__button button-reset">
+                        Распродажа запчастей для ричстакеров
+                    </button>
+                </div>
+
+                <a href="#" class="link link--mobile promotions__link--mobile">
+                    Все акции
+
+                    <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                        loading='lazy'>
+                </a>
+            </div>
+        </section>
+
+        <section class="services-cycle">
+            <div class="container">
+                <div class="section-top services-cycle__top">
+                    <h2 class="title services-cycle__title">
+                        Полный цикл услуг для <span>бесперебойной работы</span>
+                    </h2>
+
+                    <a href="#" class="link">
+                        В каталог
+
+                        <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                            loading='lazy'>
+                    </a>
+                </div>
+
+                <div class="slider swiper-first">
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="slider__slide services-cycle__slide swiper-slide">
+                            <h3 class="services-cycle__slide-title">
+                                Обслуживание складской спецтехники
+                            </h3>
+
+                            <img src="images/services-cycle/services-cycle-image.svg" alt="Картинка обслуживания складской спецтехники" class='services-cycle__slide-image' width='37' height='33' loading='lazy'>
+                        </div>
+
+                        <div class="slider__slide services-cycle__slide swiper-slide">
+                            <h3 class="services-cycle__slide-title">
+                                Ремонт комплектовщиков заказов
+                            </h3>
+
+                            <img src="images/services-cycle/services-cycle-image.svg" alt="Картинка обслуживания складской спецтехники" class='services-cycle__slide-image' width='37' height='33' loading='lazy'>
+                        </div>
+
+                        <div class="slider__slide services-cycle__slide swiper-slide">
+                            <h3 class="services-cycle__slide-title">
+                                Ремонт комплектовщиков заказов
+                            </h3>
+
+                            <img src="images/services-cycle/services-cycle-image.svg" alt="Картинка обслуживания складской спецтехники" class='services-cycle__slide-image' width='37' height='33' loading='lazy'>
+                        </div>
+
+                        <div class="slider__slide services-cycle__slide swiper-slide">
+                            <h3 class="services-cycle__slide-title">
+                                Ремонт комплектовщиков заказов
+                            </h3>
+
+                            <img src="images/services-cycle/services-cycle-image.svg" alt="Картинка обслуживания складской спецтехники" class='services-cycle__slide-image' width='37' height='33' loading='lazy'>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__controls swiper-first-controls">
+                    <button class="slider__btn swiper-button-prev"></button>
+                    <button class="slider__btn swiper-button-next"></button>
+                </div>
+
+                <a href="#" class="link link--mobile services-cycle__link--mobile">
+                    Все услуги
+
+                    <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                        loading='lazy'>
+                </a>
+            </div>
+        </section>
+
+        <section class="lead">
+            <div class="container">
+                <div class='lead__wrapper'>
+                    <div class='lead__content'>
+                        <h2 class="title lead__title">
+                            Готовы оснастить склад надежной техникой?
+                        </h2>
+
+                        <p class="lead__text">
+                            Более 500 единиц в наличии. Гарантия на технику 3 года и 0% простоя. Доставка от 48 часов.
+                        </p>
+
+                        <p class="lead__text">
+                            Наш инженер бесплатно подберет 3 варианта техники и рассчитает вашу выгоду.
+                        </p>
+                    </div>
+
+                    <form action="#" class="form" method='post'>
+                        <h3 class="form__title">
+                            Оставьте свои данные, и с Вами свяжется наш специалист
+                        </h3>
+
+                        <input type="text" class='form__input' placeholder='Имя' name='username'>
+
+                        <input type="tel" class='form__input' placeholder='Номер телефона' name='usertel'>
+
+                        <input type="file" id="file-upload" class="form__file-input" hidden>
+
+                        <label for="file-upload" class="form__attach">
+                            <div class='form__attach-image__wrapper'>
+                                <img src="images/help/attach.png" alt="Картинка скрепки" class="form__attach-image"
+                                    width='24' height='24' loading='lazy'>
+                            </div>
+
+                            <span class="form__attach-text">
+                                Прикрепить файл
+                            </span>
+                        </label>
+
+                        <button class="form__button button-reset" type='submit'>
+                            Получить КП за 10 минут
+                        </button>
+
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__input" name="agree">
+
+                            <span class="checkbox__custom"></span>
+
+                            <span class="checkbox__text">
+                                Я согласен с условиями
+                            </span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="insights">
+            <div class="container">
+                <div class="section-top insights__top">
+                    <h2 class="title insights__title">
+                        Технологии, идеи, решения <span>по оснащению склада</span>
+                    </h2>
+
+                    <a href="#" class="link">
+                        В каталог
+
+                        <img src="images/icons/arrow-up-right.svg" alt="Стрелка вверх" width='18' height='18'
+                            loading='lazy'>
+                    </a>
+                </div>
+
+                <div class="slider swiper-second">
+                    <div class="slider__wrapper insights__slider-wrapper swiper-wrapper">
+                        <div class="slider__slide insights__slide swiper-slide">
+                            <img src="images/insights/insights-image.webp" alt="Картинка приглашения на выставку" class='insights__slide-image' width='557' height='259' loading='lazy'>
+
+                            <div class='insights__slide-content'>
+                                <h3 class="insights__slide-title">
+                                    Приглашение на выставку Noblelift Open 2025
+                                </h3>
+    
+                                <time datetime="2024-06-15" class="insights__data"> 
+                                    <span>15 июня</span>
+                                </time>
+                            </div>
+                        </div>
+
+                        <div class="slider__slide insights__slide swiper-slide">
+                            <div class="insights__slide-image__wrapper">
+                                <img src="images/insights/insights-image.svg" alt="Картинка приглашения на выставку" width='37' height='33' loading='lazy'>
+                            </div>
+
+                            <h3 class="insights__slide-title">
+                                Приглашение на выставку Noblelift Open 2025
+                            </h3>
+
+                            <time datetime="2024-06-15" class="insights__data"> 
+                                <span>15 июня</span>
+                            </time>
+                        </div>
+
+                        <div class="slider__slide insights__slide swiper-slide">
+                            <div class="insights__slide-image__wrapper">
+                                <img src="images/insights/insights-image.svg" alt="Картинка приглашения на выставку" width='37' height='33' loading='lazy'>
+                            </div>
+
+                            <h3 class="insights__slide-title">
+                                Приглашение на выставку Noblelift Open 2025
+                            </h3>
+
+                            <time datetime="2024-06-15" class="insights__data"> 
+                                <span>15 июня</span>
+                            </time>
+                        </div>
+
+                        <div class="slider__slide insights__slide swiper-slide">
+                            <div class="insights__slide-image__wrapper">
+                                <img src="images/insights/insights-image.svg" alt="Картинка приглашения на выставку" width='37' height='33' loading='lazy'>
+                            </div>
+
+                            <h3 class="insights__slide-title">
+                                Приглашение на выставку Noblelift Open 2025
+                            </h3>
+
+                            <time datetime="2024-06-15" class="insights__data"> 
+                                <span>15 июня</span>
+                            </time>
+                        </div>
+
+                        <div class="slider__slide insights__slide swiper-slide">
+                            <div class="insights__slide-image__wrapper">
+                                <img src="images/insights/insights-image.svg" alt="Картинка приглашения на выставку" width='37' height='33' loading='lazy'>
+                            </div>
+
+                            <h3 class="insights__slide-title">
+                                Приглашение на выставку Noblelift Open 2025
+                            </h3>
+
+                            <time datetime="2024-06-15" class="insights__data"> 
+                                <span>15 июня</span>
+                            </time>
+                        </div>
+
+                        <div class="slider__slide insights__slide swiper-slide">
+                            <img src="images/insights/insights-image.webp" alt="Картинка приглашения на выставку" width='557' height='259' loading='lazy'>
+
+                            <h3 class="insights__slide-title">
+                                Приглашение на выставку Noblelift Open 2025
+                            </h3>
+
+                            <time datetime="2024-06-15" class="insights__data"> 
+                                <span>15 июня</span>
+                            </time>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__controls swiper-second-controls">
+                    <button class="slider__btn swiper-button-prev"></button>
+                    <button class="slider__btn swiper-button-next"></button>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
