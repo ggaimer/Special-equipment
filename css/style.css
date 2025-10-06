@@ -1348,30 +1348,42 @@
     width: 450px;
 }
 
-.services__wrapper {
-    position: relative;
-    z-index: 2;
-}
-
-.services__slider {
-    position: relative;
-    top: 0;
-    width: 100vw;
-    right: 0;
-    transform: translateX(-50%);
-}
-
 .swiper-pagination {
-    position: absolute;
-    bottom: 0; /* прижимаем к низу секции */
-    left: 0;
-    width: 100%;
+    width: 450px !important;
     height: 4px;
-    background: #d0d0d0; /* серая линия подложки */
+    background: #d0d0d0;
 }
 
 .swiper-pagination-progressbar-fill {
     background-color: var(--primary);
+}
+
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+    top: auto !important;
+}
+
+.services__slider-wrapper {
+    position: absolute;
+    top: 215px;
+    right: -180px;
+}
+
+.services__slide {
+    width: 288px !important;
+    height: 383px !important;
+}
+
+.services__slider {
+    margin-bottom: 60px;
+}
+
+.services__slide-image {
+    border-radius: 10px;
+}
+
+.services__slide-image:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 

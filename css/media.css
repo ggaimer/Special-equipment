@@ -443,6 +443,10 @@
         margin-bottom: 60px;
     }
 
+    .offer__item {
+        line-height: 133%;
+    }
+
     .promotions__button {
         text-align: center;
     }

@@ -41,55 +41,65 @@ fileInput.addEventListener('change', () => {
 
 // swiper
 
-let swiperFirst;
-let swiperSecond;
+// let swiperFirst;
+// let swiperSecond;
 
-function initSwipers() {
-  const w = window.innerWidth;
+// function initSwipers() {
+//   const w = window.innerWidth;
 
-  if (w >= 980) {
-    if (!swiperFirst) {
-      swiperFirst = new Swiper('.swiper-first', {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-first-controls .swiper-button-next',
-          prevEl: '.swiper-first-controls .swiper-button-prev',
-        },
-      });
-    }
+//   if (w >= 980) {
+//     if (!swiperFirst) {
+//       swiperFirst = new Swiper('.swiper-first', {
+//         slidesPerView: 2,
+//         spaceBetween: 20,
+//         loop: true,
+//         navigation: {
+//           nextEl: '.swiper-first-controls .swiper-button-next',
+//           prevEl: '.swiper-first-controls .swiper-button-prev',
+//         },
+//       });
+//     }
 
-    if (!swiperSecond) {
-      swiperSecond = new Swiper('.swiper-second', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        navigation: {
-          nextEl: '.swiper-second-controls .swiper-button-next',
-          prevEl: '.swiper-second-controls .swiper-button-prev',
-        },
-      });
-    }
-  } else {
-    if (swiperFirst) {
-      swiperFirst.destroy(true, true);
-      swiperFirst = null;
-    }
-    if (swiperSecond) {
-      swiperSecond.destroy(true, true);
-      swiperSecond = null;
-    }
-  }
-}
+//     if (!swiperSecond) {
+//       swiperSecond = new Swiper('.swiper-second', {
+//         slidesPerView: 3,
+//         spaceBetween: 30,
+//         loop: true,
+//         navigation: {
+//           nextEl: '.swiper-second-controls .swiper-button-next',
+//           prevEl: '.swiper-second-controls .swiper-button-prev',
+//         },
+//       });
+//     }
+//   } else {
+//     if (swiperFirst) {
+//       swiperFirst.destroy(true, true);
+//       swiperFirst = null;
+//     }
+//     if (swiperSecond) {
+//       swiperSecond.destroy(true, true);
+//       swiperSecond = null;
+//     }
+//   }
+// }
 
-function debounce(fn, wait = 150) {
-  let t;
-  return function() {
-    clearTimeout(t);
-    t = setTimeout(() => fn.apply(this, arguments), wait);
-  };
-}
+// function debounce(fn, wait = 150) {
+//   let t;
+//   return function() {
+//     clearTimeout(t);
+//     t = setTimeout(() => fn.apply(this, arguments), wait);
+//   };
+// }
 
-initSwipers();
-window.addEventListener('resize', debounce(initSwipers));
+// initSwipers();
+// window.addEventListener('resize', debounce(initSwipers));
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+    },
+})
