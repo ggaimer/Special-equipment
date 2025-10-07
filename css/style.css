@@ -89,7 +89,7 @@
 
 .section-top {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
 }
 
@@ -558,6 +558,10 @@
     margin-bottom: 155px;
 }
 
+.assortment__image {
+    height: 100%;
+}
+
 .assortment__image-rounded {
     border-radius: 30px;
 }
@@ -619,7 +623,11 @@
 .card {
     position: relative;
     max-width: 272px;
-    height: 508px;
+    height: 100%;
+
+    padding: 28px 28px 22px;
+
+    border: 1px solid #e5e5e5;
 }
 
 .card:hover .card__image-wrapper {
@@ -705,7 +713,7 @@
 }
 
 .card__link {
-    width: 270px;
+    width: 100%;
     height: 44px;
     
     display: flex;
@@ -846,6 +854,7 @@
 
 	border-radius: 10px;
 	background-color: var(--primary);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
     margin-bottom: 62px;
 }
@@ -1203,6 +1212,8 @@
 }
 
 .experience__image {
+    object-fit: cover;
+
     border-radius: 30px;
     margin-bottom: 46px;
 }
@@ -1294,7 +1305,7 @@
 }
 
 .offer__title {
-    width: 607px;
+    width: 606px;
     margin-bottom: 23px;
 }
 
@@ -1595,6 +1606,7 @@
 }
 
 .insights__slider-wrapper {
+    position: relative !important;
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 23px;
