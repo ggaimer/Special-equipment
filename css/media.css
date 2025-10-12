@@ -777,7 +777,11 @@
     }
 
     .accordion.active .accordion__content {
-        max-height: 314px;
+        max-height: 340px;
+    }
+
+    .accordion.active .accordion__content:not(:last-child) {
+        margin-bottom: 60px;
     }
 
     .accordion__top {
