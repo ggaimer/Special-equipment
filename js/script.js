@@ -27,79 +27,120 @@ overlay.addEventListener("click", () => {
 
 // file-upload
 
-const fileInput = document.getElementById('file-upload')
-const fileText = document.querySelector('.form__attach-text')
+const fileInputs = document.querySelectorAll('.form__file-input')
 
-fileInput.addEventListener('change', () => {
-    if (fileInput.files.length > 0) {
-        fileText.textContent = fileInput.files[0].name
-    } else {
-        fileText.textContent = 'Прикрепить файл'
-    }
+fileInputs.forEach(input => {
+    input.addEventListener('change', () => {
+        const label = document.querySelector(`label[for="${input.id}"]`)
+        const textEl = label.querySelector('.form__attach-text')
+
+        textEl.textContent = input.files.length > 0
+            ? input.files[0].name
+            : 'Прикрепить файл'
+    })
 })
 
 
 // swiper
 
-// let swiperFirst;
-// let swiperSecond;
 
-// function initSwipers() {
-//   const w = window.innerWidth;
+const slidesServices = document.querySelectorAll('.swiper--services .swiper-slide').length
 
-//   if (w >= 980) {
-//     if (!swiperFirst) {
-//       swiperFirst = new Swiper('.swiper-first', {
-//         slidesPerView: 2,
-//         spaceBetween: 20,
-//         loop: true,
-//         navigation: {
-//           nextEl: '.swiper-first-controls .swiper-button-next',
-//           prevEl: '.swiper-first-controls .swiper-button-prev',
-//         },
-//       });
-//     }
+const swiperServices = new Swiper('.swiper.swiper--services', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    loop: slidesServices > 3,
 
-//     if (!swiperSecond) {
-//       swiperSecond = new Swiper('.swiper-second', {
-//         slidesPerView: 3,
-//         spaceBetween: 30,
-//         loop: true,
-//         navigation: {
-//           nextEl: '.swiper-second-controls .swiper-button-next',
-//           prevEl: '.swiper-second-controls .swiper-button-prev',
-//         },
-//       });
-//     }
-//   } else {
-//     if (swiperFirst) {
-//       swiperFirst.destroy(true, true);
-//       swiperFirst = null;
-//     }
-//     if (swiperSecond) {
-//       swiperSecond.destroy(true, true);
-//       swiperSecond = null;
-//     }
-//   }
-// }
+    pagination: {
+        el: '.swiper--services .swiper-pagination',
+        type: 'progressbar',
+    },
 
-// function debounce(fn, wait = 150) {
-//   let t;
-//   return function() {
-//     clearTimeout(t);
-//     t = setTimeout(() => fn.apply(this, arguments), wait);
-//   };
-// }
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: false,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false,
+        },
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+    },
+})
 
-// initSwipers();
-// window.addEventListener('resize', debounce(initSwipers));
-
-const swiper = new Swiper('.swiper', {
+const swiperServicesCycle = new Swiper('.swiper.swiper--services-cycle', {
     slidesPerView: 2,
     spaceBetween: 30,
     loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        type: 'progressbar',
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+        },
+        980: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            allowSlideNext: true,
+            allowSlidePrev: true,
+        }
+    }
+})
+
+const swiper = new Swiper('.swiper.swiper--insights', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    }
+})
+
+
+// accordion
+
+const accordionButtons = document.querySelectorAll('.accordion__top')
+const accordionContent = document.querySelector('.accordion__content')
+
+accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const parent = button.closest('.accordion')
+        parent.classList.toggle('active')
+
+
+    })
 })

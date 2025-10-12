@@ -306,6 +306,11 @@ textarea {
 	padding: 0; /* 2 */
 }
 
+[type='checkbox'] {
+    border: none;
+    outline: none;
+}
+
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
