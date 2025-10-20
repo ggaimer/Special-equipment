@@ -43,7 +43,6 @@ fileInputs.forEach(input => {
 
 // swiper
 
-
 const slidesServices = document.querySelectorAll('.swiper--services .swiper-slide').length
 
 const swiperServices = new Swiper('.swiper.swiper--services', {
@@ -60,7 +59,7 @@ const swiperServices = new Swiper('.swiper.swiper--services', {
         0: {
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: false,
+            loop: false,    
         },
         768: {
             slidesPerView: 1,
@@ -72,6 +71,7 @@ const swiperServices = new Swiper('.swiper.swiper--services', {
             spaceBetween: 30,
         },
     },
+
 })
 
 const swiperServicesCycle = new Swiper('.swiper.swiper--services-cycle', {
@@ -86,14 +86,10 @@ const swiperServicesCycle = new Swiper('.swiper.swiper--services-cycle', {
         0: {
             slidesPerView: 1,
             spaceBetween: 15,
-            allowSlideNext: true,
-            allowSlidePrev: true,
         },
         768: {
             slidesPerView: 1,
             spaceBetween: 20,
-            allowSlideNext: true,
-            allowSlidePrev: true,
         },
         980: {
             slidesPerView: 2,
@@ -101,7 +97,8 @@ const swiperServicesCycle = new Swiper('.swiper.swiper--services-cycle', {
             allowSlideNext: true,
             allowSlidePrev: true,
         }
-    }
+    },
+    watchOverflow: true,
 })
 
 const swiper = new Swiper('.swiper.swiper--insights', {
@@ -140,7 +137,5 @@ accordionButtons.forEach(button => {
     button.addEventListener('click', () => {
         const parent = button.closest('.accordion')
         parent.classList.toggle('active')
-
-
     })
 })
