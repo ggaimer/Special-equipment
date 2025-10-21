@@ -185,6 +185,10 @@
 }
 
 @media (max-width: 979px) {
+    .swiper {
+        overflow: visible !important;
+    }
+
     .swiper-button-next,
     .swiper-button-prev {
         display: none !important;

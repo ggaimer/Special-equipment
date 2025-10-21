@@ -43,12 +43,10 @@ fileInputs.forEach(input => {
 
 // swiper
 
-const slidesServices = document.querySelectorAll('.swiper--services .swiper-slide').length
-
 const swiperServices = new Swiper('.swiper.swiper--services', {
     slidesPerView: 2,
     spaceBetween: 30,
-    loop: slidesServices > 3,
+    loop: true,
 
     pagination: {
         el: '.swiper--services .swiper-pagination',
@@ -59,19 +57,16 @@ const swiperServices = new Swiper('.swiper.swiper--services', {
         0: {
             slidesPerView: 1,
             spaceBetween: 15,
-            loop: false,    
         },
         768: {
             slidesPerView: 1,
             spaceBetween: 20,
-            loop: false,
         },
         1200: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
     },
-
 })
 
 const swiperServicesCycle = new Swiper('.swiper.swiper--services-cycle', {
@@ -86,16 +81,16 @@ const swiperServicesCycle = new Swiper('.swiper.swiper--services-cycle', {
         0: {
             slidesPerView: 1,
             spaceBetween: 15,
+            allowTouchMove: false,
         },
         768: {
             slidesPerView: 1,
             spaceBetween: 20,
+            allowTouchMove: false,
         },
         980: {
             slidesPerView: 2,
             spaceBetween: 30,
-            allowSlideNext: true,
-            allowSlidePrev: true,
         }
     },
     watchOverflow: true,
