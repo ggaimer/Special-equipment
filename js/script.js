@@ -100,6 +100,7 @@ const swiper = new Swiper('.swiper.swiper--insights', {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
+    slidesPerGroup: 3,
 
     navigation: {
         nextEl: '.swiper-button-next',
@@ -110,14 +111,17 @@ const swiper = new Swiper('.swiper.swiper--insights', {
         0: {
             slidesPerView: 1,
             spaceBetween: 15,
+            slidesPerGroup: 1,
         },
         768: {
             slidesPerView: 1,
             spaceBetween: 20,
+            slidesPerGroup: 1,
         },
         1200: {
             slidesPerView: 3,
             spaceBetween: 30,
+            slidesPerGroup: 3,
         },
     }
 })
